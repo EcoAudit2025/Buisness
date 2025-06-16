@@ -1,4 +1,16 @@
 # simple_ai_models.py
+eco_ai = EcoAI()
+
+class MaterialAI:
+    def analyze_material(self, material):
+        return {
+            'sustainability_score': 7.5,
+            'environmental_impact': 4.3,
+            'recyclability': 8.2,
+            'category': 'Plastic'
+        }
+
+material_ai = MaterialAI()
 
 class EcoAI:
     def __init__(self):
@@ -42,15 +54,3 @@ class EcoAI:
             }
         }
 
-eco_ai = EcoAI()
-
-class MaterialAI:
-    def analyze_material(self, material):
-        return {
-            'sustainability_score': 7.5,
-            'environmental_impact': 4.3,
-            'recyclability': 8.2,
-            'category': 'Plastic'
-        }
-
-material_ai = MaterialAI()
