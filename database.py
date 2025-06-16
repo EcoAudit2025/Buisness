@@ -90,3 +90,14 @@ def generate_user_ai_analysis(user, usage):
 
 def update_user_environmental_class(user_id, env_class, analysis):
     pass
+
+def delete_user(username):
+    try:
+        user = session.query(User).filter_by(username=username).first()
+        if user:
+            session.delete(user)
+            session.commit()
+            return True
+        return False
+    except:
+        return False
