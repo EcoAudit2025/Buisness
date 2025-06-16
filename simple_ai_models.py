@@ -1,5 +1,4 @@
 # simple_ai_models.py
-eco_ai = EcoAI()
 
 class MaterialAI:
     def analyze_material(self, material):
@@ -53,4 +52,5 @@ class EcoAI:
                 'gas_trend': 'falling'
             }
         }
-
+        
+eco_ai = EcoAI()
